@@ -18,6 +18,8 @@ import { BadgeCheck, Candy, Citrus, Shield } from "lucide-react";
 import { Sheet, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import EditUser from "@/components/EditUser";
+import AppLineChart from "@/components/AppLineChart";
 // import EditUser from "@/components/EditUser";
 // import AppLineChart from "@/components/AppLineChart";
 
@@ -112,9 +114,9 @@ const SingleUserPage = () => {
               <h1 className="text-xl font-semibold">User Information</h1>
               <Sheet>
                 <SheetTrigger asChild>
-                  <Button>Edit User</Button>
+                  <Button className="cursor-pointer">Edit User</Button>
                 </SheetTrigger>
-                {/* <EditUser /> */}
+                <EditUser />
               </Sheet>
             </div>
             <div className="space-y-4 mt-4">
@@ -175,7 +177,7 @@ const SingleUserPage = () => {
           {/* CHART CONTAINER */}
           <div className="bg-primary-foreground p-4 rounded-lg">
             <h1 className="text-xl font-semibold">User Activity</h1>
-            {/* <AppLineChart /> */}
+            <AppLineChart />
           </div>
         </div>
       </div>
