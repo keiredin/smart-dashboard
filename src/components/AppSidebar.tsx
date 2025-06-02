@@ -78,7 +78,12 @@ const AppSidebar = () => {
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
               <Link href="/">
-                <Image src="/logo.svg" alt="logo" width={20} height={20} />
+                <Image
+                  src="https://avatars.githubusercontent.com/u/487976"
+                  alt="logo"
+                  width={20}
+                  height={20}
+                />
                 <span>Admin Board</span>
               </Link>
             </SidebarMenuButton>
